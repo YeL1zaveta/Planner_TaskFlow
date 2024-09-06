@@ -89,5 +89,25 @@ namespace WAF.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zrzut_ekranu_2024_09_06_124523 {
+            get {
+                object obj = ResourceManager.GetObject("Zrzut ekranu 2024-09-06 124523", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Zrzut_ekranu_2024_09_06_124556 {
+            get {
+                object obj = ResourceManager.GetObject("Zrzut ekranu 2024-09-06 124556", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

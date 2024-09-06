@@ -20,7 +20,7 @@ namespace WAF
             button1.FlatAppearance.BorderSize = 0; 
 
             button2.FlatStyle = FlatStyle.Flat;
-            button2.BackColor = Color.Plum;
+            button2.BackColor = Color.Orange;
             button2.FlatAppearance.BorderSize = 0;
 
             button3.FlatStyle = FlatStyle.Flat;
@@ -28,14 +28,22 @@ namespace WAF
             button3.FlatAppearance.BorderSize = 0;
 
             button4.FlatStyle = FlatStyle.Flat;
-            button4.BackColor = Color.PaleVioletRed;
+            button4.BackColor = Color.HotPink;
             button4.FlatAppearance.BorderSize = 0;
+
+            button5.FlatStyle = FlatStyle.Flat;
+            button5.BackColor = Color.HotPink;
+            button5.FlatAppearance.BorderSize = 0;
+
+            button6.FlatStyle = FlatStyle.Flat;
+            button6.BackColor = Color.Aquamarine;
+            button6.FlatAppearance.BorderSize = 0;
 
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
 
-            label1.Font = new Font("Planer", 16, FontStyle.Bold); 
-            label1.ForeColor = Color.Coral;
-            label1.Text = "Planer";
+          //  label1.Font = new Font("Planer", 16, FontStyle.Bold); 
+           // label1.ForeColor = Color.Coral;
+            //label1.Text = "Planer";
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -69,6 +77,16 @@ namespace WAF
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
