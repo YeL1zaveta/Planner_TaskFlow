@@ -3,28 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|c:\\users\\elish\\documents\\github\\waf\\waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\home.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|c:\\users\\elish\\documents\\github\\waf\\waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|solutionrelative:waf\\signin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{17D3FC8A-7601-42A0-A80D-06E9438732DB}|WAF\\WAF.csproj|C:\\Users\\elish\\Documents\\GitHub\\WAF\\waf\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,76 +46,81 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Login.cs",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Login.cs",
               "RelativeDocumentMoniker": "WAF\\Login.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Login.cs",
               "RelativeToolTip": "WAF\\Login.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAowD8AAAA4AAAA",
+              "ViewState": "AQIAACsAAAAAAAAAAAAAAEYAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-07T17:13:17.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Login.cs",
               "RelativeDocumentMoniker": "WAF\\Login.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Login.cs [Design]",
               "RelativeToolTip": "WAF\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:55:50.768Z"
+              "WhenOpened": "2024-09-07T16:55:50.768Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Form1.cs",
               "RelativeDocumentMoniker": "WAF\\Form1.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Form1.cs [Design]",
               "RelativeToolTip": "WAF\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T15:58:04.179Z"
+              "WhenOpened": "2024-09-07T15:58:04.179Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Signin.cs [Design]",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Signin.cs",
               "RelativeDocumentMoniker": "WAF\\Signin.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Signin.cs [Design]",
               "RelativeToolTip": "WAF\\Signin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T17:42:51.469Z"
+              "WhenOpened": "2024-09-07T17:42:51.469Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "Home.cs [Design]",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Home.cs",
               "RelativeDocumentMoniker": "WAF\\Home.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Home.cs [Design]",
               "RelativeToolTip": "WAF\\Home.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T18:10:26.741Z"
+              "WhenOpened": "2024-09-07T18:10:26.741Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Signin.cs",
               "DocumentMoniker": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Signin.cs",
               "RelativeDocumentMoniker": "WAF\\Signin.cs",
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Signin.cs",
               "RelativeToolTip": "WAF\\Signin.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAtwB0AAAAAAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAIAzwB8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T17:50:25.337Z"
+              "WhenOpened": "2024-09-07T17:50:25.337Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -127,7 +132,8 @@
               "RelativeToolTip": "WAF\\Form1.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAApwCwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:22:17.153Z"
+              "WhenOpened": "2024-09-07T16:22:17.153Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -139,7 +145,8 @@
               "RelativeToolTip": "WAF\\Form1.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-07T16:22:38.724Z"
+              "WhenOpened": "2024-09-07T16:22:38.724Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -150,7 +157,8 @@
               "ToolTip": "C:\\Users\\elish\\Documents\\GitHub\\WAF\\WAF\\Form1.resx",
               "RelativeToolTip": "WAF\\Form1.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-09-07T16:22:37.347Z"
+              "WhenOpened": "2024-09-07T16:22:37.347Z",
+              "EditorCaption": ""
             }
           ]
         }
