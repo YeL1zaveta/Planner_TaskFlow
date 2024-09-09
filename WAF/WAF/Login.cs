@@ -38,7 +38,8 @@ namespace WAF
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
             string username = textBoxGmail.Text;
             string password = textBoxPass.Text;
@@ -63,11 +64,18 @@ namespace WAF
                     }
                     MessageBox.Show("Error,try again!");
                 }
-               
-            }
 
+            }
         }
 
-  
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+            Signin sign = new Signin();
+
+            sign.Show();
+
+            this.Hide();
+        }
     }
+    
 }
