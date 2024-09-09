@@ -11,11 +11,14 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WAF
 {
     public partial class Home : Form
     {
+        string filenote = "notes.txt";
+
         public Home()
         {
             InitializeComponent();
@@ -48,7 +51,6 @@ namespace WAF
             string Calendar = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
             string Titleofnote = textBox.Text;
             string Note = richTextBox.Text;
-            string filenote = "notes.txt";
 
             if (string.IsNullOrEmpty(Note))
             {
@@ -75,7 +77,25 @@ namespace WAF
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            string Calendar = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
 
+            using (StreamReader stream = new StreamReader(filenote))
+            {
+                string line;
+
+                while ((line = stream.ReadLine()) != null)
+                {
+                    string[] data = line.Split(';');
+                    if (data[0] == Calendar)
+                    {
+                        MessageBox.Show("Data found: " + data[0] + "\nNote: " + data[1]);
+
+                        break;
+                    }
+                }
+               
+
+            }
         }
     }
     }
