@@ -14,6 +14,7 @@ namespace WAF
     public partial class Login : Form
     {
         string fileuser = "users.txt";
+
         public Login()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace WAF
         {
             string username = textBoxGmail.Text;
             string password = textBoxPass.Text;
+            bool loginSuccessful = false;
 
             using (StreamReader stream = new StreamReader(fileuser))
             {
@@ -51,7 +53,7 @@ namespace WAF
                 while ((line = stream.ReadLine()) != null)
                 {
                     string[] data = line.Split(';');
-                    if (data[0] == username && data[1] == password)
+                    if (data[1] == username && data[2] == password)
                     {
                         MessageBox.Show("Log in succesfuly!");
 
@@ -62,10 +64,14 @@ namespace WAF
                         this.Hide();
                         break;
                     }
-                    MessageBox.Show("Error,try again!");
+                }
+                if (!loginSuccessful)
+                {
+                    MessageBox.Show("Error, incorrect username or password. Please try again!");
                 }
 
             }
+
         }
 
         private void label4_Click_1(object sender, EventArgs e)
