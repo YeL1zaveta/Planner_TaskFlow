@@ -66,6 +66,7 @@ namespace WAF
                 MessageBox.Show("User data saved successfully!");
 
                 richTextBox.Clear();
+                textBox.Clear();
 
             }
             catch (Exception ex)
