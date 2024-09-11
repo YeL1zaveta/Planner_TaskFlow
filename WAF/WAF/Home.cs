@@ -11,6 +11,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Linq;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace WAF
@@ -76,27 +77,62 @@ namespace WAF
 
         }
 
-        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
-            string Calendar = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+            string selectedDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+
+            listView.Items.Clear();
 
             using (StreamReader stream = new StreamReader(filenote))
             {
                 string line;
+                bool noteFound = false; 
 
                 while ((line = stream.ReadLine()) != null)
                 {
                     string[] data = line.Split(';');
-                    if (data[0] == Calendar)
-                    {
-                        MessageBox.Show("Data found: " + data[0] + "\nNote: " + data[1]);
 
-                        break;
+                    if (data[0] == selectedDate)
+                    {
+                        ListViewItem item = new ListViewItem(data[0]); 
+
+                        if (data.Length > 1)
+                        {
+                            item.SubItems.Add(data[1]); 
+                        }
+                        else
+                        {
+                            item.SubItems.Add("No notes"); 
+                        }
+
+                        if (data.Length > 2)
+                        {
+                            item.SubItems.Add(data[2]); 
+                        }
+                        else
+                        {
+                            item.SubItems.Add(string.Empty);
+                        }
+
+                        listView.Items.Add(item); 
+                        noteFound = true;
+                        break; 
                     }
                 }
-               
 
+                if (!noteFound)
+                {
+                    ListViewItem item = new ListViewItem(selectedDate); 
+                    item.SubItems.Add("No notes found for this date."); 
+                    listView.Items.Add(item); 
+                }
             }
+        }
+
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
     }

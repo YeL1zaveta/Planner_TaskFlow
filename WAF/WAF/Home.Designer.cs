@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.picture = new System.Windows.Forms.PictureBox();
-            this.listView1 = new System.Windows.Forms.ListView();
             this.textBox = new System.Windows.Forms.TextBox();
             this.richTextBox = new System.Windows.Forms.RichTextBox();
             this.button1 = new System.Windows.Forms.Button();
@@ -40,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.Taskflow = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.listView = new System.Windows.Forms.ListView();
             ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -55,16 +55,6 @@
             this.picture.TabIndex = 0;
             this.picture.TabStop = false;
             this.picture.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // listView1
-            // 
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(446, 111);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(325, 417);
-            this.listView1.TabIndex = 1;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // textBox
             // 
@@ -153,19 +143,29 @@
             this.monthCalendar1.Location = new System.Drawing.Point(18, 111);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 4;
+            this.monthCalendar1.DateChanged += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateChanged);
+            // 
+            // listView
+            // 
+            this.listView.HideSelection = false;
+            this.listView.Location = new System.Drawing.Point(433, 111);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(325, 417);
+            this.listView.TabIndex = 9;
+            this.listView.UseCompatibleStateImageBehavior = false;
             // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 665);
+            this.Controls.Add(this.listView);
             this.Controls.Add(this.Taskflow);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox);
             this.Controls.Add(this.monthCalendar1);
             this.Controls.Add(this.textBox);
-            this.Controls.Add(this.listView1);
             this.Controls.Add(this.picture);
             this.Name = "Home";
             this.Text = "Home";
@@ -180,7 +180,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox picture;
-        private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.TextBox textBox;
         private System.Windows.Forms.RichTextBox richTextBox;
         private System.Windows.Forms.Button button1;
@@ -190,5 +189,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Taskflow;
         private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ListView listView;
     }
 }
