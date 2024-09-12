@@ -47,86 +47,62 @@ namespace WAF
             f.Show();
         }
 
+        private void AddNoteToListBox(string date, string title, string note)
+        {
+            listBox1.Items.Add($"{date}: {title}");
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
-            string Calendar = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
-            string Titleofnote = textBox.Text;
-            string Note = richTextBox.Text;
+            string calendarDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+            string titleOfNote = textBox.Text;
+            string note = richTextBox.Text;
 
-            if (string.IsNullOrEmpty(Note))
+            if (!string.IsNullOrEmpty(note) && !string.IsNullOrEmpty(titleOfNote))
             {
-                MessageBox.Show("Write something...");
-            }
-
-            try
-            {
-                using (StreamWriter writer = new StreamWriter(filenote, true)) // true - otwieramy plik w trybie dopisywania
+                using (StreamWriter writer = new StreamWriter(filenote, true))
                 {
-                    writer.WriteLine($"{Calendar};{Titleofnote};{Note}");
+                    writer.WriteLine($"{calendarDate};{titleOfNote};{note}");
                 }
-                MessageBox.Show("User data saved successfully!");
+
+                AddNoteToListBox(calendarDate, titleOfNote, note);
 
                 richTextBox.Clear();
                 textBox.Clear();
-
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error while saving data: " + ex.Message);
-            }
-
         }
 
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {
             string selectedDate = monthCalendar1.SelectionRange.Start.ToString("yyyy-MM-dd");
+            listBox1.Items.Clear();
 
-            listView.Items.Clear();
-
-            using (StreamReader stream = new StreamReader(filenote))
+            try
             {
-                string line;
-                bool noteFound = false; 
-
-                while ((line = stream.ReadLine()) != null)
+                using (StreamReader stream = new StreamReader("notes.txt"))
                 {
-                    string[] data = line.Split(';');
-
-                    if (data[0] == selectedDate)
+                    string line;
+                    bool noteFound = false;
+                    while ((line = stream.ReadLine()) != null)
                     {
-                        ListViewItem item = new ListViewItem(data[0]); 
+                        string[] data = line.Split(';');
 
-                        if (data.Length > 1)
+                        if (data[0] == selectedDate)
                         {
-                            item.SubItems.Add(data[1]); 
+                            listBox1.Items.Add($"{data[1]}: {data[2]}"); 
+                            noteFound = true;
                         }
-                        else
-                        {
-                            item.SubItems.Add("No notes"); 
-                        }
-
-                        if (data.Length > 2)
-                        {
-                            item.SubItems.Add(data[2]); 
-                        }
-                        else
-                        {
-                            item.SubItems.Add(string.Empty);
-                        }
-
-                        listView.Items.Add(item); 
-                        noteFound = true;
-                        break; 
+                    }
+                    if (!noteFound)
+                    {
+                        listBox1.Items.Add("No notes found for this date."); 
                     }
                 }
-
-                if (!noteFound)
-                {
-                    ListViewItem item = new ListViewItem(selectedDate); 
-                    item.SubItems.Add("No notes found for this date."); 
-                    listView.Items.Add(item); 
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error reading file: " + ex.Message);
             }
         }
 
