@@ -16,8 +16,6 @@ namespace WAF
         public Form1()
         {
             InitializeComponent();
-           // Taskflow.Font = new Font("Planer", 14, FontStyle.Bold);
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
