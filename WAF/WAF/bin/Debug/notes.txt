@@ -9,3 +9,5 @@
 2024-10-04;Car Service Appointment;oil change
 
 2024-10-30;Team Project Deadline;
+2024-09-13;buy new books;harry potter
+2024-09-13;call mom;a call at 8:00 PM
