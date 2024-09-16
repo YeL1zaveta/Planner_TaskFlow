@@ -1,5 +1,6 @@
 # Planner_TaskFlow
-C#, .NET
+C# 
+.NET
 
 # Descrioption:
 TaskFlow is a personal task management and note-keeping application designed to help you stay organized and manage your daily tasks effectively. With an easy-to-use interface, TaskFlow enables users to create, view, and organize notes based on specific dates. 
